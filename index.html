@@ -102,7 +102,10 @@
   </div>
 
   <footer>
-    <p>&copy; 2025 3.brave — Built for the future of the internet</p>
+    <p>&copy; <span id="year"></span> 3.brave — Built for the future of the internet</p>
   </footer>
+  <script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
